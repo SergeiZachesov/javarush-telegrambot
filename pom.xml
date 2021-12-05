@@ -13,19 +13,26 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>javarush-telegrambot</name>
 	<description>Telegram bot for Javarush from community to community</description>
+
 	<properties>
 		<java.version>11</java.version>
+		<telegrambots.starter.ver>5.0.1</telegrambots.starter.ver>
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.telegram</groupId>
+			<artifactId>telegrambots-spring-boot-starter</artifactId>
+			<version>${telegrambots.starter.ver}</version>
 		</dependency>
 	</dependencies>
 
